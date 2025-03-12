@@ -53,6 +53,7 @@ input {
 }
 
 /* Legg til-knapp */
+
 button {
   padding: 10px 15px;
   margin-left: 5px;
@@ -69,6 +70,24 @@ button:hover {
 }
 
 /* Oppgaveliste */
+
+#todoInput,
+#addButton {
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#todoList {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none; /* Fjerner standard punktmerking */
+  margin-top: 50px;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -84,6 +103,12 @@ li {
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
+  word-wrap: break-word; /* Sørger for at lange ord brytes */
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 li:hover {
